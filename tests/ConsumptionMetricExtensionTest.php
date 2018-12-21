@@ -8,14 +8,12 @@ use Enqueue\Consumption\Context\MessageResult;
 use Enqueue\Consumption\Context\ProcessorException;
 use Enqueue\Consumption\Context\Start;
 use Enqueue\Null\NullMessage;
-use Enqueue\Null\NullQueue;
 use Evaneos\Enqueue\Metric\Clock;
 use Evaneos\Enqueue\Metric\ConsumptionMetricExtension;
 use Evaneos\Enqueue\Metric\MetricService;
 use Interop\Queue\Consumer;
 use Interop\Queue\Context;
 use Interop\Queue\Processor;
-use Interop\Queue\Queue;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -38,8 +36,8 @@ class ConsumptionMetricExtensionTest extends TestCase
 
         $this->extension = new ConsumptionMetricExtension(
             $this->metricService,
-            self::PREFIX,
-            self::TAGS
+            self::TAGS,
+            self::PREFIX
         );
     }
 

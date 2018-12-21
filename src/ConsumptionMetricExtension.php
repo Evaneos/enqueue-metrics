@@ -18,11 +18,11 @@ class ConsumptionMetricExtension implements StartExtensionInterface, MessageRece
     /** @var MetricService */
     private $metricService;
 
-    /** @var string */
-    private $prefix;
-
     /** @var array */
     private $tags;
+
+    /** @var string */
+    private $prefix;
 
     /** @var Clock */
     private $clock;
@@ -31,14 +31,14 @@ class ConsumptionMetricExtension implements StartExtensionInterface, MessageRece
      * ConsumptionMetricExtension constructor.
      *
      * @param MetricService $metricService
-     * @param string        $prefix
      * @param array         $tags
+     * @param string        $prefix
      */
-    public function __construct(MetricService $metricService, $prefix = 'consumer', array $tags = [])
+    public function __construct(MetricService $metricService, array $tags = [], $prefix = 'consumer')
     {
         $this->metricService = $metricService;
-        $this->tags = $tags;
         $this->prefix = $prefix;
+        $this->tags = $tags;
         $this->clock = new SystemClock();
     }
 
