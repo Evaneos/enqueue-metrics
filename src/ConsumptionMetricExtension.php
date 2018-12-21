@@ -24,6 +24,9 @@ class ConsumptionMetricExtension implements StartExtensionInterface, MessageRece
     /** @var array */
     private $tags;
 
+    /** @var Clock */
+    private $clock;
+
     /**
      * ConsumptionMetricExtension constructor.
      *
