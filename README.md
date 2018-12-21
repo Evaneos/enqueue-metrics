@@ -17,9 +17,9 @@ $extension = new ConsumptionMetricExtension($metricService, $tags, $optionalPref
 
 ## Metrics
 
-- `{PREFIX|default: consumer}.started (increment)`
-- `{PREFIX|default: consumer}.stopped (increment)`
-- `{PREFIX|default: consumer}.message_received (increment)`
-- `{PREFIX|default: consumer}.message_consumed (increment)`
-- `{PREFIX|default: consumer}.message_processing_time (timing)`
-- `{PREFIX|default: consumer}.error (increment)`
+- `{PREFIX|default: consumer}.started` (increment)
+- `{PREFIX|default: consumer}.stopped` (increment)
+- `{PREFIX|default: consumer}.message_received` (increment)
+- `{PREFIX|default: consumer}.message_consumed` (increment)
+- `{PREFIX|default: consumer}.message_processing_time` (timing)
+- `{PREFIX|default: consumer}.error` (increment)
