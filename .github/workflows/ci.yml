@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist
 
-      - name: run tests
-        run: vendor/bin/phpunit
+      - name: Run tests
+        run: vendor/bin/phpunit --config=phpunit.xml
 
 
