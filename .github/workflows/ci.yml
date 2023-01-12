@@ -34,5 +34,3 @@ jobs:
 
       - name: Run tests
         run: vendor/bin/phpunit --config=phpunit.xml
-
-
