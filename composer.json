@@ -3,7 +3,7 @@
     "description": "Provide tools for publish metrics with the enqueue-dev lib",
     "type": "library",
     "require": {
-        "enqueue/enqueue": "~0.9.0",
+        "enqueue/enqueue": "~0.10.0",
         "beberlei/metrics": "^2.8"
     },
     "require-dev": {
